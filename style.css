@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4978e;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.postcard {
+    width: 800px;
+    height: 500px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+    box-shadow: .8em .8em 15px rgba(0,0,0,.3);
+     -ms-transform: rotate(2.5deg); /* IE 9 */
+      -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+      transform: rotate(2.5deg);
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  .letter{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .letter p{
+    display: inline;
+    font-size: 1.3em;
+    color: rgb(121, 121, 121);
+  }
+  
+  /*animation*/
+  .postcard:hover,
+  .postcard:active,
+  .postcard:focus{
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  
+  
+  }
+  
+  /*form*/
+  .mail_stamp {
+    width: 100px;
+    float: right;
+  }
+  
+  .address{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+    align-items: end;
+  }
+
+  #address {
+    text-decoration: underline;
+  }
+  
+  textarea {
+    overflow: auto;
+    resize: none;
+    height: 10em;
+    width: 17em;
+    margin-top: .5em;
+    margin-bottom: 1em;
+  }
+  
+  .push{
+    margin-bottom: 1em;
+    margin-top: .5em;
+  }
+  
+  #recipient_email{
+    margin-top: 4.5em;
+    margin-bottom: 1.5em;
+  }
+.show{
+    visibility: visible;
+
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.folha{
+    background-color: #f4978e;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    background-color: #fff;
+    width: 40vw;
+    height: 95%;
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.6);
+    padding: 40px;
+}
+
+
+.text .video{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.text .video button{
+    margin-top: 0.2rem;
+    width: 160px;
+    border: none;
+    background-color: #f4978e;
+    color: #000000;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.text video{
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width: 900px) {
+    .postcard{
+        width: 95%;
+    }
+
+    .letter p{
+        display: inline;
+        font-size: 1em;
+        color: rgb(121, 121, 121);
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+    
+    .text {
+        background-color: #fff;
+        width: 90vw;
+        height: 1400px;
+        line-height: 1.2em;
+        text-align: center;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .text .video{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .text video{
+        width: 80px;
+    }
+
+    .text .video button{
+        margin-top: 0.2rem;
+        width: 80px;
+    }    
+
+    .folha{
+        background-color: #f4978e;
+        width: 100vw;
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
